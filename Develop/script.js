@@ -1,6 +1,7 @@
 // Starter code source (index and css) "crispy-octo-meme by: Georgeyoo, mfyke, cmathena2u"
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
+timeList = document.querySelector("#future");
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
