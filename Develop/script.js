@@ -1,6 +1,6 @@
 // Starter code source (index and  css) "crispy-octo-meme by: Georgeyoo, mfyke, cmathena2u"
 
-// Save Button
+// Save Button Variable
 var saveButton = $(".saveBtn");
 //
 
@@ -19,4 +19,26 @@ function colorBlock() {
             $(this).addClass("past");
         }
     })
+};
+
+//Save Button(click)
+saveButton.on("click", function() {
+    time = $(this).siblings(".hour").text();
+    prep = $(this).siblings(".prep").val();
+
+    // "Hour" and "Prep" save to local storage
+    localStorage.setItem(time, prep);
+});
+
+//Text Input stays after refresh
+userPrep();
+function userPrep() {
+    $(".hour").each(function() {
+        currentHour = $(this).text();
+        currentPrep = localStorage.getItem(currentHour);
+
+    if(currentPrep !== null) {
+        $(this).siblings(".prep").val(currentPrep);
+    }
+});
 }
