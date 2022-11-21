@@ -4,6 +4,8 @@
 var saveButton = $(".saveBtn");
 //
 
+$("#currentDay").text(dayjs().format("MMMM D YYYY"));
+
 colorBlock();
 function colorBlock() {
     hour = dayjs().hour();
