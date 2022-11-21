@@ -4,6 +4,7 @@
 var saveButton = $(".saveBtn");
 //
 
+//Current date display
 $("#currentDay").text(dayjs().format("MMMM D YYYY"));
 
 colorBlock();
