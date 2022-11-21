@@ -1,4 +1,4 @@
-YourPlanPrepper
+<h1>YourPlanPrepper</h1>
 
 YourPlanPrepper allows the user to save their desired event from 9am to 5pm.
 Once the user opens the page, the user will be presented with the current date.
